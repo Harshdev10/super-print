@@ -1,10 +1,4 @@
-<!-- /*
-* Bootstrap 5
-* Template Name: Furni
-* Template Author: Untree.co
-* Template URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -62,13 +56,13 @@
 						<div class="col-lg-5">
 							<div class="intro-excerpt">
 								<h1>Contact</h1>
-								<p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
-								<p><a href="" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
+								<p class="mb-4"></p>
+								<p></p>
 							</div>
 						</div>
 						<div class="col-lg-7">
 							<div class="hero-img-wrap">
-								<img src="images/couch.png" class="img-fluid">
+
 							</div>
 						</div>
 					</div>
@@ -79,7 +73,7 @@
 		
 		<!-- Start Contact Form -->
 		<div class="untree_co-section">
-      <div class="container">
+      <div class="container ">
 
         <div class="block">
           <div class="row justify-content-center">
@@ -97,7 +91,10 @@
                       </svg>
                     </div> <!-- /.icon -->
                     <div class="service-contents">
-                      <p>43 Raymouth Rd. Baltemoer, London 3910</p>
+                      <p>
+
+						
+						39 jati colony rambagh indore </p>
                     </div> <!-- /.service-contents-->
                   </div> <!-- /.service -->
                 </div>
@@ -110,7 +107,7 @@
                       </svg>
                     </div> <!-- /.icon -->
                     <div class="service-contents">
-                      <p>info@yourdomain.com</p>
+                      <p> Superprint2023@gmail </p>
                     </div> <!-- /.service-contents-->
                   </div> <!-- /.service -->
                 </div>
@@ -123,13 +120,13 @@
                       </svg>
                     </div> <!-- /.icon -->
                     <div class="service-contents">
-                      <p>+1 294 3925 3939</p>
+                      <p>+91 9144477131</p>
                     </div> <!-- /.service-contents-->
                   </div> <!-- /.service -->
                 </div>
               </div>
 
-              <form>
+              <form id ="contactForm">
                 <div class="row">
                   <div class="col-6">
                     <div class="form-group">
@@ -276,8 +273,23 @@
 
 			</div>
 		</footer>
+
 		<!-- End Footer Section -->	
 
+		<script>document.getElementById('contactForm').addEventListener('submit', function(event) {
+			event.preventDefault();
+		
+			var fname = document.getElementById('fname').value;
+			var lname = document.getElementById('lname').value;
+			var email = document.getElementById('email').value;
+		
+			var subject = 'Contact Form Submission';
+			var body = 'First Name: ' + fname + '\n' +
+					   'Last Name: ' + lname + '\n' +
+					   'Email: ' + email;
+		
+			window.location.href = 'mailto:yourEmail@example.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+		});</script>
 
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
