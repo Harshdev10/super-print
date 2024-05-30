@@ -709,3 +709,12 @@ textarea {
     height: 50px;
     border-radius: 50%;
     background: rgba(59, 93, 80, 0.2); }
+
+    .container-credits {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
+    }
