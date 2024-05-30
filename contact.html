@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="favicon.png">
+
 
   <meta name="description" content="" />
   <meta name="keywords" content="bootstrap, bootstrap4" />
@@ -24,7 +24,7 @@
 		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
 			<div class="container">
-				<a class="navbar-brand" href="index.html">Furni<span>.</span></a>
+				<a class="navbar-brand" href="index.html"><img style="width:150px" src="images/logo.png"></a>
 
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -50,7 +50,7 @@
 		<!-- End Header/Navigation -->
 
 		<!-- Start Hero Section -->
-			<div class="hero">
+			<div  class="hero">
 				<div class="container">
 					<div class="row justify-content-between">
 						<div class="col-lg-5">
@@ -58,11 +58,6 @@
 								<h1>Contact</h1>
 								<p class="mb-4"></p>
 								<p></p>
-							</div>
-						</div>
-						<div class="col-lg-7">
-							<div class="hero-img-wrap">
-
 							</div>
 						</div>
 					</div>
@@ -183,12 +178,12 @@
 						<div class="subscription-form">
 							<h3 class="d-flex align-items-center"><span class="me-1"><i class="fa-brands fa-whatsapp"></i></span><span>Send us a Message</span></h3>
 
-							<form action="#" class="row g-3">
+							<form id="whatsappForm" action="#" class="row g-3">
 								<div class="col-auto">
-									<input type="text" class="form-control" placeholder="Enter your Name">
+									<input id="nameInput" type="text" class="form-control" placeholder="Enter your Name">
 								</div>
 								<div class="col-auto">
-									<input type="email" class="form-control" placeholder="Enter your Messsage">
+									<input id="messageInput" type="text" class="form-control" placeholder="Enter your Messsage">
 								</div>
 								<div class="col-auto">
 									<button class="btn btn-primary">
@@ -196,7 +191,6 @@
 									</button>
 								</div>
 							</form>
-
 						</div>
 					</div>
 				</div>
@@ -219,23 +213,25 @@
 
 					<div class="col-lg-8" style="margin-top: 10px;">
 						<div class="row links-wrap" style="margin-top: 10px;">
+						
 							<div class="col-6 col-sm-6 col-md-3">
+								<h4>Links</h4>	
 								<ul class="list-unstyled">
-									<li><a href="about.html">About us</a></li>
-									<li><a href="shop.html">Products</a></li>
-									<li><a href="services.html">Services</a></li>
-									<li><a href="contact.html">Contact us</a></li>
+									<li style="font-weight:500"><a href="about.html">About us</a></li>
+									<li style="font-weight:500"><a href="shop.html">Products</a></li>
+									<li style="font-weight:500"><a href="services.html">Services</a></li>
+									<li style="font-weight:500"><a href="contact.html">Contact us</a></li>
 								</ul>
 							</div>
 							
 							<div class="col-6 col-sm-6 col-md-3" style="margin-right: 100px;">
 								<h4>Contact Us</h4>	
 								<ul class="list-unstyled">
-									<li><i class="fa-solid fa-location-dot"></i>  39, Jati colony Rambagh Indore </li>
+									<li><i style="color: #f9bf29;" class="fa-solid fa-location-dot"></i> <a href="">  39, Jati colony Rambagh Indore </a> </li>
 									
-									<li><i class="fa-solid fa-phone"></i><a href="tel:+91 9144477131"> +91 9144477131</a></li>
-									<li><i class="fa-solid fa-phone"></i><a href="tel:+91 9039184703"> +91 9039184703</a></li>
-									<li><i class="fa-solid fa-envelope"></i></i><a href="mailto:Superprint2023@gmail"> Superprint2023@gmail</a></li>
+									<li><i style="color: #f9bf29;" class="fa-solid fa-phone"></i><a href="tel:+91 9144477131"> +91 9144477131</a></li>
+									<li><i style="color: #f9bf29;" class="fa-solid fa-phone"></i><a href="tel:+91 9039184703"> +91 9039184703</a></li>
+									<li><i style="color: #f9bf29;" class="fa-solid fa-envelope"></i></i><a href="mailto:Superprint2023@gmail"> Superprint2023@gmail</a></li>
 									
 								</ul>
 							</div>
@@ -271,23 +267,36 @@
 				</div>
 			  </div>
 		</footer>
-
 		<!-- End Footer Section -->	
 
-		<script>document.getElementById('contactForm').addEventListener('submit', function(event) {
-			event.preventDefault();
-		
-			var fname = document.getElementById('fname').value;
-			var lname = document.getElementById('lname').value;
-			var email = document.getElementById('email').value;
-		
-			var subject = 'Contact Form Submission';
-			var body = 'First Name: ' + fname + '\n' +
-					   'Last Name: ' + lname + '\n' +
-					   'Email: ' + email;
-		
-			window.location.href = 'mailto:yourEmail@example.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-		});</script>
+		<a style="position: fixed;
+		width: 60px;
+		height: 60px;
+		bottom: 15px;
+		left:15px;
+		background-color: #25d366;
+		color: #FFF;
+		border-radius: 50px;
+		text-align: center;
+		font-size: 30px;
+		box-shadow: 2px 2px 3px #999;
+		z-index: 100;" class="whats-app" href=" https://wa.me/9039184703" target="_blank">
+			<i style=" margin-top: 16px;" class="fab fa-whatsapp my-float"></i>
+		</a>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				document.getElementById('whatsappForm').addEventListener('submit', function(event) {
+					event.preventDefault();
+
+					var name = document.getElementById('nameInput').value;
+					var message = document.getElementById('messageInput').value;
+
+					var whatsappMessage = 'Name: ' + name + ', Message: ' + message;
+
+					window.location.href = 'https://wa.me/9039184703?text=' + encodeURIComponent(whatsappMessage);
+				});
+			});
+		</script>
 
 
 		<script src="js/bootstrap.bundle.min.js"></script>
